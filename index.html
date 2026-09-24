@@ -1,99 +1,220 @@
-N
-NUSAKARA
-CREATIVE
-ABOUT
-SERVICES
-WORK
-PROCESS
-CONTACT
-CREATIVE × STRATEGY × DIGITAL
-MAKE YOUR BRAND MATTER.
-NUSAKARA CREATIVE connects strategy, creativity, content and digital execution to help brands become clearer, more relevant and harder to ignore.
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NUSAKARA CREATIVE — Creative Strategy & Digital Experiences</title>
+  <meta name="description" content="NUSAKARA CREATIVE connects strategy, creativity, content and digital execution to build brands that matter.">
+  <meta name="theme-color" content="#0D2129">
+  <meta property="og:title" content="NUSAKARA CREATIVE">
+  <meta property="og:description" content="Creative Strategy & Digital Experiences">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-START A CONVERSATION ↗
-EXPLORE OUR WORK ↓
-NUSA
-KARA
-01 / ABOUT
-Strategy first.
-Creativity with purpose.
-We build brand communication that is not only designed to look good, but designed to make sense, create relevance and move people to act.
+    :root{
+      --ink:#0D2129;
+      --deep:#033040;
+      --orange:#FA3E0B;
+      --red:#C6492B;
+      --paper:#F5F3EE;
+      --white:#fff;
+      --muted:#64737A;
+      --line:rgba(13,33,41,.14);
+      --max:1240px;
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--paper);color:var(--ink);
+      font-family:"DM Sans",Arial,sans-serif;line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(calc(100% - 48px),var(--max));margin:auto}
+    header{
+      position:fixed;z-index:50;top:0;left:0;right:0;
+      background:rgba(245,243,238,.9);backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(13,33,41,.08)
+    }
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
+    .mark{
+      width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--paper);
+      display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:18px
+    }
+    .brand span{font-family:"Space Grotesk";font-size:15px}
+    .brand small{font-size:11px;font-weight:500;color:var(--muted);margin-left:3px}
+    .links{display:flex;gap:30px;font-size:12px;font-weight:700;letter-spacing:.08em}
+    .links a{opacity:.72;transition:.2s}.links a:hover{opacity:1;color:var(--orange)}
+    .nav-cta{
+      padding:11px 16px;border:1px solid var(--ink);border-radius:999px;
+      font-size:12px;font-weight:700;transition:.2s
+    }
+    .nav-cta:hover{background:var(--ink);color:white}
+    .hero{padding:170px 0 90px;min-height:820px;display:grid;grid-template-columns:1.02fr .98fr;gap:70px;align-items:center}
+    .eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--orange);margin-bottom:24px}
+    h1,h2,h3{font-family:"Space Grotesk",Arial,sans-serif;letter-spacing:-.055em;line-height:.94;margin:0}
+    h1{font-size:clamp(64px,8.5vw,126px);max-width:780px}
+    .hero-copy{max-width:620px;margin-top:34px;font-size:18px;color:#405159}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;gap:12px;padding:15px 20px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em}
+    .btn.primary{background:var(--orange);color:white}.btn.secondary{border:1px solid var(--ink)}
+    .btn.secondary:hover{background:var(--ink);color:white}
+    .hero-art{
+      min-height:520px;border-radius:36px;background:var(--ink);overflow:hidden;position:relative;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .hero-art:before{
+      content:"";position:absolute;inset:0;opacity:.22;
+      background-image:linear-gradient(rgba(255,255,255,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.15) 1px,transparent 1px);
+      background-size:38px 38px;
+    }
+    .orb{position:absolute;border-radius:50%;filter:blur(.2px)}
+    .orb.a{width:330px;height:330px;background:var(--orange);right:-65px;top:-70px}
+    .orb.b{width:230px;height:230px;background:var(--red);left:-55px;bottom:-45px}
+    .orb.c{width:125px;height:125px;background:#E7D8C8;left:28%;top:15%}
+    .art-type{position:relative;z-index:2;color:white;font-family:"Space Grotesk";font-weight:700;font-size:clamp(70px,10vw,145px);line-height:.7;letter-spacing:-.09em;transform:rotate(-7deg);text-align:center}
+    .art-type span{display:block;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.7)}
+    section{padding:105px 0}
+    .section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:52px}
+    .kicker{font-size:11px;letter-spacing:.16em;font-weight:700;color:var(--orange);margin-bottom:16px}
+    h2{font-size:clamp(46px,6vw,82px);max-width:780px}
+    .section-intro{max-width:390px;color:var(--muted);font-size:15px}
+    .about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px}
+    .panel{border:1px solid var(--line);border-radius:var(--radius);padding:38px;background:rgba(255,255,255,.35)}
+    .panel.dark{background:var(--ink);color:white;border-color:var(--ink)}
+    .big-statement{font-family:"Space Grotesk";font-size:clamp(30px,4vw,55px);line-height:1.02;letter-spacing:-.05em}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:36px}
+    .stat{padding:25px;background:var(--paper)}
+    .stat strong{display:block;font:700 34px "Space Grotesk";letter-spacing:-.05em}.stat span{font-size:11px;color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+    .service{padding:32px 10px 34px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:60px 1fr;gap:18px}
+    .service:nth-child(odd){border-right:1px solid var(--line);padding-right:34px}
+    .service:nth-child(even){padding-left:34px}
+    .num{font:600 14px "Space Grotesk";color:var(--orange)}
+    .service h3{font-size:30px;letter-spacing:-.04em;margin-bottom:12px}.service p{color:var(--muted);font-size:14px;margin:0;max-width:520px}
+    .work{background:var(--deep);color:white}
+    .work .kicker{color:#ff7957}.work .section-intro{color:rgba(255,255,255,.62)}
+    .case{display:grid;grid-template-columns:1.1fr .9fr;min-height:430px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);overflow:hidden}
+    .case-visual{position:relative;background:#102a34;display:grid;place-items:center;overflow:hidden}
+    .case-visual:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--orange);right:-120px;top:-130px}
+    .case-visual:after{content:"JMC";position:relative;z-index:2;font:700 130px "Space Grotesk";letter-spacing:-.09em;transform:rotate(-8deg)}
+    .case-info{padding:44px;display:flex;flex-direction:column;justify-content:space-between}
+    .case-info h3{font-size:50px}.case-info p{color:rgba(255,255,255,.65);font-size:15px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}.tag{border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 11px;font-size:10px;letter-spacing:.08em}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+    .step{padding:30px 20px 10px 0;border-right:1px solid var(--line);margin-right:20px;min-height:220px}.step:last-child{border:0}
+    .step-no{font:600 12px "Space Grotesk";color:var(--orange)}.step h3{font-size:28px;margin:35px 0 12px}.step p{font-size:13px;color:var(--muted)}
+    .contact{padding:125px 0;background:var(--orange);color:white}
+    .contact h2{font-size:clamp(55px,8vw,115px);max-width:950px}
+    .contact-row{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-top:40px}
+    .contact p{max-width:430px;margin:0;font-size:16px;opacity:.9}
+    .contact .btn{background:var(--ink);color:white}
+    footer{background:var(--ink);color:white;padding:28px 0}.footer{display:flex;justify-content:space-between;gap:20px;font-size:11px;color:rgba(255,255,255,.6)}.footer strong{color:white}
+    @media(max-width:900px){
+      .links{display:none}.hero{grid-template-columns:1fr;padding-top:135px;min-height:auto}.hero-art{min-height:400px}
+      .about-grid,.case{grid-template-columns:1fr}.services{grid-template-columns:1fr}.service:nth-child(odd){border-right:0;padding-right:10px}.service:nth-child(even){padding-left:10px}
+      .process-grid{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.section-head{display:block}.section-intro{margin-top:20px}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(calc(100% - 30px),var(--max))}.nav{height:68px}.nav-cta{display:none}
+      .hero{padding-top:110px}.hero-art{min-height:320px;border-radius:24px}.hero-copy{font-size:16px}
+      section{padding:78px 0}.panel{padding:25px}.process-grid{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line);margin:0;padding-right:0}
+      .case-info{padding:28px}.case-info h3{font-size:40px}.contact{padding:85px 0}.contact-row{display:block}.contact-row .btn{margin-top:28px}.footer{display:block}.footer div+div{margin-top:8px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><div class="mark">N</div><span>NUSAKARA <small>CREATIVE</small></span></a>
+    <nav class="links">
+      <a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#work">WORK</a><a href="#process">PROCESS</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/6282312493330">LET'S TALK ↗</a>
+  </div>
+</header>
 
-01
-CLARITY
-Sharper positioning, messages and visual direction so your brand knows what it needs to say.
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow">CREATIVE × STRATEGY × DIGITAL</div>
+      <h1>MAKE YOUR<br>BRAND<br>MATTER.</h1>
+      <p class="hero-copy">NUSAKARA CREATIVE connects strategy, creativity, content and digital execution to help ambitious brands become clearer, more relevant and harder to ignore.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/6282312493330">START A CONVERSATION ↗</a>
+        <a class="btn secondary" href="#work">EXPLORE OUR WORK ↓</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="NUSAKARA CREATIVE visual">
+      <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+      <div class="art-type">NU<span>SA</span>KARA</div>
+    </div>
+  </section>
 
-02
-RELEVANCE
-Creative ideas grounded in audience, context and the real behavior of your market.
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">01 / ABOUT</div><h2>Ideas need a reason to exist.</h2></div><p class="section-intro">We build brands and digital experiences where strategic thinking and creative execution work as one.</p></div>
+      <div class="about-grid">
+        <div class="panel dark"><div class="big-statement">Not just content.<br>Not just design.<br><span style="color:#FA3E0B">A clearer way forward.</span></div></div>
+        <div class="panel">
+          <p>NUSAKARA CREATIVE is a creative strategy and digital partner for businesses that want to communicate with more clarity, consistency and impact.</p>
+          <p>From positioning and content to social media and digital execution, we connect the pieces so brands can move with purpose.</p>
+          <div class="stats"><div class="stat"><strong>01</strong><span>STRATEGY FIRST</span></div><div class="stat"><strong>01</strong><span>CONNECTED PARTNER</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-03
-MOMENTUM
-Consistent content and digital execution that turns a strategy into an active brand presence.
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">02 / SERVICES</div><h2>Built around what brands actually need.</h2></div><p class="section-intro">Flexible capabilities, connected under one creative direction.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><div><h3>Brand Strategy</h3><p>Positioning, messaging and strategic direction that give your brand a sharper point of view.</p></div></article>
+        <article class="service"><div class="num">02</div><div><h3>Creative Direction</h3><p>Visual systems and creative concepts that turn strategy into a recognisable brand experience.</p></div></article>
+        <article class="service"><div class="num">03</div><div><h3>Social & Content</h3><p>Content strategy, editorial planning and social media execution designed to build relevance over time.</p></div></article>
+        <article class="service"><div class="num">04</div><div><h3>Digital Experiences</h3><p>Websites and digital touchpoints that make the brand easier to understand, explore and engage with.</p></div></article>
+      </div>
+    </div>
+  </section>
 
-02 / SERVICES
-From thinking
-to execution.
-A focused creative partner for brands that need strategy, communication and digital work to move together.
+  <section id="work" class="work">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">03 / SELECTED WORK</div><h2>Strategy becomes visible.</h2></div><p class="section-intro">A snapshot of how we connect brand thinking with digital execution.</p></div>
+      <article class="case">
+        <div class="case-visual"><div class="case-visual-label"></div></div>
+        <div class="case-info">
+          <div><div class="kicker">CASE STUDY / 001</div><h3>Jaya<br>Mediacell</h3><p>Building awareness and digital presence for a growing device repair business through social media strategy, content and execution.</p></div>
+          <div class="tags"><span class="tag">DIGITAL STRATEGY</span><span class="tag">SOCIAL MEDIA</span><span class="tag">CONTENT</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
 
-01
-BRAND STRATEGY
-Positioning, messaging, brand direction and communication frameworks.
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">04 / PROCESS</div><h2>Think first. Make better.</h2></div><p class="section-intro">A simple process designed to keep strategy, creativity and execution connected.</p></div>
+      <div class="process-grid">
+        <article class="step"><div class="step-no">01 — DISCOVER</div><h3>Understand</h3><p>We learn the business, audience, market and challenge before deciding what to make.</p></article>
+        <article class="step"><div class="step-no">02 — DEFINE</div><h3>Focus</h3><p>We turn complexity into a clear strategic direction and creative opportunity.</p></article>
+        <article class="step"><div class="step-no">03 — CREATE</div><h3>Build</h3><p>We develop the ideas, identity, content and digital experiences that bring the direction to life.</p></article>
+        <article class="step"><div class="step-no">04 — DELIVER</div><h3>Grow</h3><p>We launch, learn and refine so the work continues to create value beyond the first release.</p></article>
+      </div>
+    </div>
+  </section>
 
-02
-CREATIVE DIRECTION
-Campaign concepts, visual systems and creative direction built around a clear idea.
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="kicker" style="color:white">05 / START SOMETHING</div>
+      <h2>Have a brand that deserves more?</h2>
+      <div class="contact-row"><p>Tell us what you're building, where you're stuck, or where you want to go next. Let's make the next move clearer.</p><a class="btn" href="https://wa.me/6282312493330">START A CONVERSATION ↗</a></div>
+    </div>
+  </section>
+</main>
 
-03
-CONTENT & SOCIAL
-Content strategy, social media management, editorial systems and platform-native creative.
-
-04
-DIGITAL EXPERIENCES
-Websites, digital touchpoints and experiences that connect brand intent with user action.
-
-03 / SELECTED WORK
-Ideas made
-visible.
-A growing portfolio of strategy, content and digital work. Case studies will continue to be added as NUSAKARA grows.
-
-CASE STUDY / DIGITAL
-JAYA MEDIACELL
-Building awareness and a stronger digital presence for a new device repair destination.
-
-BRAND / CREATIVE
-YOUR NEXT BRAND STORY
-A space reserved for the next NUSAKARA collaboration.
-
-COMING NEXT
-MORE WORK. MORE STORIES.
-We are documenting the thinking behind the work — not just the final visuals.
-
-04 / PROCESS
-Simple enough
-to move. Rigorous enough
-to matter.
-01
-DISCOVER
-Understand the business, audience, challenge and opportunity.
-
-02
-DEFINE
-Turn insight into a clear strategic direction and creative brief.
-
-03
-CREATE
-Develop ideas, content and experiences that express the direction.
-
-04
-ACTIVATE
-Launch, learn and improve through disciplined digital execution.
-
-05 / CONTACT
-Have a brand that needs to matter more?
-Tell us what you are building, where you are stuck, or what you want to make possible. We will start from there.
-
-LET'S TALK ↗
-NUSAKARA CREATIVE
-Creative strategy & digital experiences.
-© 2026 NUSAKARA CREATIVE
+<footer>
+  <div class="wrap footer"><div><strong>NUSAKARA CREATIVE</strong> — Creative strategy & digital experiences.</div><div>© 2026 NUSAKARA CREATIVE</div></div>
+</footer>
+</body>
+</html>
